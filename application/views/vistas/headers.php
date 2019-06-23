@@ -15,5 +15,16 @@
   
     <title></title>
   </head>
+ <style type="text/css">
+#titulo{  
+    color: #16A085;
+   text-shadow: 4px 4px 3px #76D7C4;
 
+}
+#titulo1{  
+    color: #0033FF;
+   text-shadow: 4px 4px 3px #76D7C4;
+
+}
+</style>
 <body>
