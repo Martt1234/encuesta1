@@ -7,7 +7,7 @@ class Controller1 extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('vistas/headers');
-		$this->load->view('vistas/vgeneral');
+		$this->load->view('vistas/');
 	}
 
 function preguntas(){
