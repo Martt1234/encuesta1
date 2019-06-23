@@ -15,4 +15,9 @@ function preguntas(){
 $this->load->view('vistas/vpreguntas');
 }//termina la funcion preguntas
 
+function actualizarpregunte(){
+
+	
+}
+
 }//termina la clase controller1
