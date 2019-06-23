@@ -26,5 +26,10 @@
    text-shadow: 4px 4px 3px #76D7C4;
 
 }
+#titulo2{  
+    color: #8A084B;
+   text-shadow: 4px 4px 3px #F5A9E1;
+
+}
 </style>
 <body>
