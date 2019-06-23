@@ -16,6 +16,3 @@
     <title></title>
   </head>
 <body>
-<h1><webos nenes> </h1>
-</body>
-</html>
