@@ -17,7 +17,7 @@ $this->load->view('vistas/vpreguntas');
 
 function actualizarpregunta(){
 $this->load->view('vistas/headers');
-	$this->load->view('vistas/vpreguntas');
+	$this->load->view('vistas/vactpregunta');
 }
 
 }//termina la clase controller1
