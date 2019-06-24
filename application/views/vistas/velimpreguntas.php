@@ -16,6 +16,8 @@
   <tbody>
   </tbody>
     </table>
+     <br><br>
+           <a href="<?php echo site_url('Controller1/index');?>" style="color:#154360"><strong><u>Volver al inicio</u></strong></a>
   </center>
 </div>	
 </div>
