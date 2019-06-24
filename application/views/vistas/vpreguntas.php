@@ -15,6 +15,7 @@
       	<a   class="btn btn-outline-success" href="<?php echo site_url('Controller1/actualizarpregunta');?>" role = "button">Modificar</a> 
            <a  class="btn btn-outline-danger" href="<?php echo site_url('Controller1/eliminarpregunta');?>" role = "button">Eliminar</a>
            <br><br>
+           <!--enlace que te regresa a la pagina de principal-->
            <a href="<?php echo site_url('Controller1/index');?>" style="color:#154360"><strong><u>Volver al inicio</u></strong></a>
 
 <!-- Modal -->
