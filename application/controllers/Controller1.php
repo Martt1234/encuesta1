@@ -23,7 +23,7 @@ $this->load->view('vistas/headers');
 
 function eliminarpregunta(){
 $this->load->view('vistas/headers');
-$this->load->view('vistas/veliminarpreguntas');
+$this->load->view('vistas/velimpreguntas');
 }//termina la funcion de eliminar preguntas
 
 }//termina la clase controller1
