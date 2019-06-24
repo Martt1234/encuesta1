@@ -27,10 +27,10 @@
       </div>
       <div class="modal-body">
         <!--con site url creas el enlace al controlador-->
-         <form method="post" action="<?php echo site_url('')?>">
+         <form method="post" action="<?php echo site_url('Controller1/altaPregunta')?>">
     <div class="form-group">
     <label for="exampleInputEmail1">Pregunta</label>
-    <input type="Text" class="form-control" name = "" aria-describedby="emailHelp" placeholder="Escribe pregunta">
+    <input type="Text" class="form-control" name = "descripcion" aria-describedby="emailHelp" placeholder="Escribe pregunta">
     </div>
    <br>
     <button type="submit"  class="btn btn-outline-info" value="Agregar">Agregar</button>
