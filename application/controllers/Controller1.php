@@ -18,9 +18,8 @@ class Controller1 extends CI_Controller {
 	}
 
 function preguntas(){
-	$data['result'] = $this->Model_1->obtenerDatos();
 $this->load->view('vistas/headers');
-$this->load->view('vistas/vpreguntas',$data);
+$this->load->view('vistas/vpreguntas');
 }//termina la funcion preguntas
 
 function altapregunta(){
@@ -33,7 +32,16 @@ function actualizarpregunta(){
 }//termina la funcion de eliminar preguntas
 
 
-function eliminarpregunta(){
+function borrarpreg(){
+	$data['result'] = $this->Model_1->obtenerDatos();
+	$this->load->view('vistas/headers');
+	$this->load->view('vistas/velimpregunta',$data);
 }//termina la funcion de eliminar preguntas
+
+function borrarPregunta($id){
+	$this->Model_1->eliminarpregunta($id);
+	redirect("Controller1/borrarpreg");
+
+}
 
 }//termina la clase controller1
