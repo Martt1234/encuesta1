@@ -18,6 +18,12 @@ $this->load->view('vistas/vpreguntas');
 function actualizarpregunta(){
 $this->load->view('vistas/headers');
 	$this->load->view('vistas/vactpregunta');
-}
+}//termina la funcion de eliminar preguntas
+
+
+function eliminarpregunta(){
+$this->load->view('vistas/headers');
+$this->load->view('vistas/veliminarpreguntas');
+}//termina la funcion de eliminar preguntas
 
 }//termina la clase controller1
