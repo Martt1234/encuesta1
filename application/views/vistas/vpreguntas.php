@@ -13,7 +13,7 @@
         Agregar
       </button>
       	<a   class="btn btn-outline-success" href="<?php echo site_url('Controller1/actualizarpregunta');?>" role = "button">Modificar</a> 
-           <a  class="btn btn-outline-danger" href="<?php echo site_url('');?>" role = "button">Eliminar</a>
+           <a  class="btn btn-outline-danger" href="<?php echo site_url('Controller1/eliminarpregunta');?>" role = "button">Eliminar</a>
 
 <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
