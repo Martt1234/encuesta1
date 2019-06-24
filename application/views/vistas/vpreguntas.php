@@ -12,11 +12,12 @@
       <button type="button"  class="btn btn-outline-info"data-toggle="modal" data-target="#exampleModal">
         Agregar
       </button>
+      <a   class="btn btn-outline-danger" href="<?php echo site_url('Controller1/borrarpreg');?>" role = "button">Eliminar</a>
            <br><br>
            <!--enlace que te regresa a la pagina de principal-->
            <a href="<?php echo site_url('Controller1/index');?>" style="color:#154360"><strong><u>Volver al inicio</u></strong></a>
            <br><br>
-
+       
 <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -44,21 +45,7 @@
     </div>
   </div>
 </div>
-<table class="table">
-       <thead class="thead-light">
-        <tr>
-          <th scope="col">id</th>
-          <th scope="col">Descripción pregunta</th>
-          </tr>
-         </thead>
-    <tbody>
-        <?php foreach($result as $row) {?>
-                <tr>
-                <th scope="row"><?php echo $row->id; ?></th>
-                <td><?php echo $row->descripcion; ?></td>
-                <?php } ?>
-     </tbody>
-    </table>
+
      </div>                             
          </center>
 		</div>
