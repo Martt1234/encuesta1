@@ -28,11 +28,7 @@ $query = $this->db->query('SELECT * FROM preguntas WHERE `id` =' .$id);
 return $query->row();
 }//termina funcion getDato
 
-function eliminar($id){
-$this->db->where('id',$id);
-$this->db->delete('preguntas');
 
-}//termina la funcion eliminar pregunta
 
-	
+
 }//termina la clase modelo
