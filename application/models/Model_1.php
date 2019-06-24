@@ -11,8 +11,28 @@ function crearPregunta(){
 
 	$data=  array('descripcion' => $this->input->post('descripcion'));
 	$this->db->insert('preguntas',$data);
-
 }//termina la funcion alta pregunta
+
+function obtenerDatos(){
+//se le asigna auna variable query los resultados de la
+	//consulta select from
+$query = $this->db->query("SELECT * FROM  preguntas");
+
+return $query->result();
+}//termina funcion obetener dATOS
+
+function getDato($id){
+	//asignamos al query lo que se obtenga de la consulta
+	//donde los id coincidan
+$query = $this->db->query('SELECT * FROM preguntas WHERE `id` =' .$id);
+return $query->row();
+}//termina funcion getDato
+
+function eliminar($id){
+$this->db->where('id',$id);
+$this->db->delete('preguntas');
+
+}//termina la funcion eliminar pregunta
 
 	
 }//termina la clase modelo
