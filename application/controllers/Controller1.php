@@ -28,20 +28,36 @@ $this->Model_1->crearPregunta();
       redirect("Controller1/preguntas");
 }
 
-function actualizarpregunta(){
-}//termina la funcion de eliminar preguntas
+function actualizarpreg(){
+	$data['result'] = $this->Model_1->obtenerDatos();
+	$this->load->view('vistas/headers');
+	$this->load->view('vistas/vactpregunta',$data);
+
+}//termina la funcion que muesta la vista de actulializar preguntas
+	function updatepreg($id){
+      $data['row'] = $this->Model_1->updatepregunta($id);
+      redirect("Controller1/actualizarpreg");
+	}//termina la funcion de que actualiza la pregunta
+
+function editarpregunta($id){
+
+		$data['row'] = $this->Model_1->getDato($id);
+		 $this->load->view('vistas/headers');
+     $this->load->view("vistas/veditpregunta",$data);
+} //termina funcion que muestra la respuesta seleccionada en la 
+//ventana de editar pregunta
 
 
 function borrarpreg(){
 	$data['result'] = $this->Model_1->obtenerDatos();
 	$this->load->view('vistas/headers');
 	$this->load->view('vistas/velimpregunta',$data);
-}//termina la funcion de eliminar preguntas
+}//termina la funcion que carga la vista eliminar pregunta
 
 function borrarPregunta($id){
 	$this->Model_1->eliminarpregunta($id);
 	redirect("Controller1/borrarpreg");
 
-}
+}//termina la funcion que elimina la pregunta
 
 }//termina la clase controller1
