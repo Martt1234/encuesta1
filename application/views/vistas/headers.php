@@ -16,25 +16,10 @@
     <title></title>
   </head>
  <style type="text/css">
-#titulo{  
-    color: #16A085;
-   text-shadow: 4px 4px 3px #76D7C4;
-
-}
-#titulo1{  
-    color: #0033FF;
-   text-shadow: 4px 4px 3px #76D7C4;
-
-}
-#titulo2{  
-    color: #8A084B;
-   text-shadow: 4px 4px 3px #F5A9E1;
-
-}
-#titulo3{  
-    color: #011C1A;
-   text-shadow: 4px 4px 3px #08F5E4;
-
-}
+#titulo{ color: #16A085;text-shadow: 4px 4px 3px #76D7C4;}
+#titulo1{  color: #0033FF; text-shadow: 4px 4px 3px #76D7C4;}
+#titulo2{ color: #8A084B; text-shadow: 4px 4px 3px #F5A9E1;}
+#titulo3{  color: #011C1A; text-shadow: 4px 4px 3px #08F5E4;}
+#titulo4{  color: #8E44AD; text-shadow: 4px 4px 3px #EBDEF0;}
 </style>
 <body>
