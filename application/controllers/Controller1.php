@@ -18,8 +18,9 @@ class Controller1 extends CI_Controller {
 	}
 
 function preguntas(){
+	$data['result'] = $this->Model_1->obtenerDatos();
 $this->load->view('vistas/headers');
-$this->load->view('vistas/vpreguntas');
+$this->load->view('vistas/vpreguntas',$data);
 }//termina la funcion preguntas
 
 function altapregunta(){
