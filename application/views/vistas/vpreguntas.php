@@ -12,6 +12,9 @@
       <button type="button"  class="btn btn-outline-info"data-toggle="modal" data-target="#exampleModal">
         Agregar
       </button>
+
+        <a   class="btn btn-outline-secondary" href="<?php echo site_url('Controller1/actualizarpreg');?>" role = "button">Actualizar</a>
+
       <a   class="btn btn-outline-danger" href="<?php echo site_url('Controller1/borrarpreg');?>" role = "button">Eliminar</a>
            <br><br>
            <!--enlace que te regresa a la pagina de principal-->
@@ -33,7 +36,7 @@
          <form method="post" action="<?php echo site_url('Controller1/altaPregunta')?>">
     <div class="form-group">
     <label for="exampleInputEmail1">Pregunta</label>
-    <input type="Text" class="form-control" name = "descripcion" aria-describedby="emailHelp" placeholder="Escribe pregunta">
+    <input type="Text" class="form-control" name = "descripcion" aria-describedby="emailHelp" placeholder="Escribe tu pregunta">
     </div>
    <br>
     <button type="submit"  class="btn btn-outline-info" value="Agregar">Agregar</button>
