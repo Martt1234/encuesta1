@@ -28,6 +28,14 @@ $query = $this->db->query('SELECT * FROM preguntas WHERE `id` =' .$id);
 return $query->row();
 }//termina funcion getDato
 
+
+function updatepregunta($id){
+ $data=  array('descripcion' => $this->input->post('descripcion'));
+ 
+  $this->db->where('id',$id);
+ $this->db->update('preguntas',$data);
+	}
+
 function eliminarPregunta($id){
 $this->db->where('id', $id);
 $this->db->delete('preguntas');
