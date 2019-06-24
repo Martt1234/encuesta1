@@ -52,17 +52,13 @@
           </tr>
          </thead>
     <tbody>
-      <!--
         <?php foreach($result as $row) {?>
                 <tr>
                 <th scope="row"><?php echo $row->id; ?></th>
                 <td><?php echo $row->descripcion; ?></td>
-                <td> <a  class= "btn btn-outline-success"href="<?php echo site_url('Cont/editar');?>/<?php echo $row->id;?>" role = "button">Editar</a> 
-                  <td><a class="btn btn-outline-danger" href= "<?php echo site_url('Cont/eliminar'); ?>/<?php echo $row->id;?>"role="button">Borrar</a>
                 <?php } ?>
      </tbody>
     </table>
-   -->
      </div>                             
          </center>
 		</div>
