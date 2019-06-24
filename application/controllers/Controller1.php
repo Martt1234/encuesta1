@@ -11,9 +11,6 @@ class Controller1 extends CI_Controller {
 			
 		}//finaliza el constructor
 
-
-
-	
 	public function index()
 	{
 		$this->load->view('vistas/headers');
@@ -32,14 +29,10 @@ $this->Model_1->crearPregunta();
 }
 
 function actualizarpregunta(){
-$this->load->view('vistas/headers');
-	$this->load->view('vistas/vactpregunta');
 }//termina la funcion de eliminar preguntas
 
 
 function eliminarpregunta(){
-$this->load->view('vistas/headers');
-$this->load->view('vistas/velimpreguntas');
 }//termina la funcion de eliminar preguntas
 
 }//termina la clase controller1
