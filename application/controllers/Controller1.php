@@ -28,7 +28,7 @@ $this->load->view('vistas/vpreguntas');
 function altapregunta(){
 $this->Model_1->crearPregunta();
 	  // redireccionamos a controlador1
-      redirect("Controller1");
+      redirect("Controller1/preguntas");
 }
 
 function actualizarpregunta(){
