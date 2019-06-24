@@ -14,6 +14,8 @@
       </button>
       	<a   class="btn btn-outline-success" href="<?php echo site_url('Controller1/actualizarpregunta');?>" role = "button">Modificar</a> 
            <a  class="btn btn-outline-danger" href="<?php echo site_url('Controller1/eliminarpregunta');?>" role = "button">Eliminar</a>
+           <br><br>
+           <a href="<?php echo site_url('Controller1/index');?>" style="color:#154360"><strong><u>Volver al inicio</u></strong></a>
 
 <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
