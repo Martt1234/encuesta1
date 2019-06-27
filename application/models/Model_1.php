@@ -42,4 +42,11 @@ $this->db->delete('preguntas');
 }
 
 
+function crearCuestionario(){
+	//variable de tus base de datos     //recibes de tu formulario
+	$data=  array('nomenc' =>$this->input->post('nomenc'));
+	$this->db->insert('cuestionario',$data);
+}//termina la funcion de crear cuestionario
+
+
 }//termina la clase modelo
