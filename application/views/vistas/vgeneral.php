@@ -9,7 +9,7 @@
            <div>
           <a   class="btn btn-info" href="<?php echo site_url('Controller1/preguntas');?>" role = "button">Preguntas</a> 
 
-           <a   class="btn btn-warning" href="<?php echo site_url('');?>" role = "button">Cuestionario</a>
+           <a   class="btn btn-warning" href="<?php echo site_url('Controller1/cuestionario');?>" role = "button">Cuestionario</a>
            </div>            
          </center>
     </div>
