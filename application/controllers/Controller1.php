@@ -60,4 +60,15 @@ function borrarPregunta($id){
 
 }//termina la funcion que elimina la pregunta
 
+ function cuestionario(){
+      $this->load->view('vistas/headers');
+      $this->load->view('vistas/vencuest');
+   }
+
+   function nuevoCuest(){
+     $this->Model_1->crearCuestionario();
+      redirect("Controller1/cuestionario");
+   }
+
+
 }//termina la clase controller1
