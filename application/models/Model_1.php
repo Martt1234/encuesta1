@@ -10,7 +10,9 @@ class Model_1 extends CI_Model {
 function crearPregunta(){
 
 	$data=  array('descripcion' => $this->input->post('descripcion'));
-	$this->db->insert('preguntas',$data);
+	$this->db->insert('preguntas',$data);	
+
+	
 }//termina la funcion alta pregunta
 
 function obtenerDatos(){
@@ -29,7 +31,7 @@ return $query->row();
 }//termina funcion getDato
 
 
-function updatepregunta($id){
+function actpreg($id){
  $data=  array('descripcion' => $this->input->post('descripcion'));
  
   $this->db->where('id',$id);
